@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #eeede9;
+}
+
+.background-shape1 {
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    background-color: #dadace;
+}
+
+.background-shape2 {
+    position: absolute;
+    border-radius: 50%;
+    left: -200px;
+    bottom: -200px;
+    height: 400px;
+    width: 400px;
+    background-color: #dadace;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.clock-body {
+    height: 400px;
+    width: 700px;
+    background-color: #f2f1ed;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+}
