@@ -34,6 +34,11 @@ body {
 }
 
 .clock-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     height: 400px;
     width: 700px;
     background-color: #f2f1ed;
@@ -42,9 +47,74 @@ body {
 }
 
 #clock {
-    font-size: 120px;
+    font-size: 100px;
     font-family: 'Arial', sans-serif;
     color: #2e4538;
     text-align: center;
-    line-height: 400px; /* Vertically center the text */
+    line-height: 1.1;
+}
+
+#date {
+    font-size: 25px;
+    font-family: 'Arial', sans-serif;
+    color: #2e4538;
+    text-align: center;
+}
+
+.clock-controls {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.clock-controls button {
+    padding: 8px 50px;
+    border: 1px solid #2e4538;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #2e4538;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#theme-toggle {
+    background-color: #2e4538;
+    color: #f2f1ed;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #131f18;
+}
+
+body.dark-mode .background-shape1 {
+    background-color: #2e4538;
+}
+
+body.dark-mode .background-shape2 {
+    background-color: #2e4538;
+}
+
+body.dark-mode .clock-body {
+    background-color: #2e4538;
+    color: #f2f1ed;
+}
+
+body.dark-mode #clock {
+    color: #f2f1ed;
+}
+
+body.dark-mode #date {
+    color: #f2f1ed;
+}
+
+body.dark-mode .clock-controls button {
+    border-color: #f2f1ed;
+    color: #f2f1ed;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #f2f1ed;
+    color: #2e4538;
 }
