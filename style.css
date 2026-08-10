@@ -4,6 +4,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  overflow: hidden;  /* I added this so that the background shapes do not create scrollbars when they are partially off-screen. */
   background-color: #eeede9;
 }
 
@@ -38,5 +39,4 @@ body {
     background-color: #f2f1ed;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    
 }
