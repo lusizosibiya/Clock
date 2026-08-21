@@ -50,7 +50,7 @@ function updateClock() {
         updateClock();
     });
 
-        const themeToggle = document.getElementById("theme-toggle");
+    const themeToggle = document.getElementById("theme-toggle");
 
 themeToggle.addEventListener("click", function() {
     const isDarkMode = document.body.classList.toggle("dark-mode");
